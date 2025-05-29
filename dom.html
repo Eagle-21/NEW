@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+   <title>Rizu</title>
+</head>
+<style>
+    p{
+        text-align: center;
+        font: bold;
+        font-size: 20px;
+    }
+    h1{
+        color: red;
+        text-align: center;
+        font-style: italic;
+        
+
+    }
+    .card{ 
+        border: 2px solid black;
+    } 
+    button{
+        background-color: aquamarine;
+        padding: 15px 32px;
+        font-size: 30;
+        text-align: center;
+        margin: 50px 300px;
+        opacity: 0.6;
+        cursor: pointer;
+        
+
+    }
+    button:hover{
+        background-color: yellowgreen;
+        }
+        .color{
+            color: blueviolet;
+        }
+        .colour{
+            color: aliceblue;
+
+            
+        }
+</style>
+<body bgcolor="yellow">
+    
+    <div class="card">
+
+    <h1 id="heading">rizwan</h1>
+    
+    <p id="paragraph">rizwan is a top class player campared to messi and ronaldo with super reflexes and power</p>
+    <button  type="menu" id="changetext">change text</button>
+    <button id="changecolor">change</button>
+    </div>
+ <script>
+    const heading = document.getElementById("heading");
+    console.log(heading);
+     const paragraph = document.getElementById("paragraph")
+     console.log(paragraph);
+    const button = document.getElementById("changecolor");
+
+
+     const changeText = document.getElementById("changetext")
+     changeText.addEventListener ('click', () => {heading.textContent="goat"})
+     changecolor.addEventListener ('click', () => {heading.classList.toggle('color')})
+ </script>   
+</body>
+</html>
